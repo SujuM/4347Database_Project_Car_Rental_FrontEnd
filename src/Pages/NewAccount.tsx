@@ -47,15 +47,15 @@ const NewAccount: React.FC = () => {
 
             <Box sx={{ width: '100%' }}>
                 <Grid container rowSpacing={3} >
-                    <TextField
-                        required
-                        type="password"
-                        value={password}
-                        onChange={e => setPassword(e.target.value)}
-                        label="Password"
-                    />
-                    <Grid item xs={3}>
 
+                    <Grid item xs={3}>
+                        <TextField
+                            required
+                            type="password"
+                            value={password}
+                            onChange={e => setPassword(e.target.value)}
+                            label="Password"
+                        />
                     </Grid>
                     <Grid item xs={3}>
                         <TextField
@@ -141,7 +141,7 @@ const NewAccount: React.FC = () => {
                             label="State"
                         />
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={5}>
                         <TextField
                             required
                             type="text"
@@ -150,15 +150,16 @@ const NewAccount: React.FC = () => {
                             label="Zip Code"
                         />
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid item xs={6}>
+
+                    </Grid>
+                    <Grid item xs={3}>
                         <Button variant="outlined" onClick={handleClick}>CREATE ACCOUNT</Button>
                     </Grid>
 
                 </Grid>
 
             </Box>
-
-
 
         </div>
     );

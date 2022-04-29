@@ -10,8 +10,9 @@ interface LoginProps {
 const Login: React.FC<LoginProps> = ({onLogin}) => {
 
     const navigate = useNavigate();
-    const [email, setEmail] = useState('555');
-    const [password, setPassword] = useState('jkjjj');
+    //currently, username is SSN in backend.
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     function handleClick() {
         const query = new URLSearchParams({
